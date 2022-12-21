@@ -31,7 +31,25 @@ function animateHover() {
 }
 
 function animateExit() {
-  animate(splitText.chars, { y: 0 }, { duration: 1, delay: stagger(0.05) });
+  const sequence = [];
+  sequence.push(
+    [
+      splitText.chars,
+      { transform: 'translate(0, -100%)' },
+      { duration: 0.25, delay: stagger(0.05) },
+    ],
+    [
+      splitText.chars,
+      { transform: 'translate(0, 100%)' },
+      { duration: 0.0000000001 },
+    ],
+    [
+      splitText.chars,
+      { transform: 'translate(0, 0)' },
+      { duration: 0.25, delay: stagger(0.05) },
+    ]
+  );
+  timeline(sequence);
 }
 </script>
 <template>
