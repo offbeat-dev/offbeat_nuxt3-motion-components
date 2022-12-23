@@ -55,7 +55,13 @@ function animateExit() {
 <template>
   <a
     ref="link"
-    class="link"
+    class="
+      inline-block
+      relative
+      overflow-hidden
+      focus:outline-solid-black
+      w-auto
+    "
     @mouseover="
       {
         animateHover();
@@ -70,13 +76,3 @@ function animateExit() {
     >Link</a
   >
 </template>
-<style>
-.link:focus {
-  outline: 2px solid #000;
-}
-.link {
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-</style>
