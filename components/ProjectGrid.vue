@@ -1,65 +1,7 @@
 <template>
-  <div class="md:grid md:grid-cols-24 gap-2 flex flex-col">
-    <div
-      class="
-        p-4
-        rounded-lg
-        shadow-lg
-        bg-lime-500
-        text-white
-        relative
-        w-auto
-        col-start-1 col-end-13
-        aspect-video
-        overflow-hidden
-      "
-    >
-      <img
-        alt="Lomepal - Tee - Raphaël Bourdin"
-        class="
-          w-full
-          h-full
-          absolute
-          inset-0
-          pointer-events-none
-          object-cover
-          --is-loaded
-          ls-is-cached
-          lazyloaded
-        "
-        src="
-          https://images.unsplash.com/photo-1670600642066-6f0c6ced009d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3MTgyMzAyNQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080
-        "
-      />
-    </div>
-    <div
-      class="
-        p-4
-        rounded-lg
-        shadow-lg
-        bg-lime-500
-        text-white
-        relative
-        w-auto
-        col-start-13 col-end-25
-        aspect-video
-        overflow-hidden
-      "
-    >
-      <img
-        class="
-          w-full
-          h-full
-          absolute
-          inset-0
-          pointer-events-none
-          object-cover
-          --is-loaded
-          ls-is-cached
-          lazyloaded
-        "
-        src="https://images.unsplash.com/photo-1669199542665-db387bcce91f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3MTgyMzA0OA&ixlib=rb-4.0.3&q=80&w=1080"
-      />
-    </div>
+  <div class="md:grid md:grid-cols-2 lg:grid-cols-3 gap-2 flex flex-col">
+    <ProjectCard />
+    <ProjectCard />
+    <ProjectCard />
   </div>
 </template>
