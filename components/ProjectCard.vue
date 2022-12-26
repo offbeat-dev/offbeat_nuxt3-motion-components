@@ -11,7 +11,7 @@ const props = defineProps({
   },
   title: {
     type: String,
-    default: 'Title Test',
+    default: 'Default Project Title',
   },
 });
 </script>
@@ -22,12 +22,13 @@ const props = defineProps({
       p-4
       rounded-lg
       shadow-lg
-      bg-lime-500
+      bg-gray-500
       text-white
       relative
       w-auto
       aspect-video
       overflow-hidden
+      cursor-pointer
     "
   >
     <h3 class="text-white absolute z-1">{{ title }}</h3>
@@ -38,14 +39,12 @@ const props = defineProps({
         h-full
         absolute
         inset-0
-        pointer-events-none
         object-cover
-        --is-loaded
-        ls-is-cached
-        lazyloaded
+        hover:scale-110
+        transform
+        duration-500
       "
       :src="image.src"
     />
-    <slot />
   </div>
 </template>
