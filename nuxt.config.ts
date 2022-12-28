@@ -1,3 +1,3 @@
 export default defineNuxtConfig({
-  modules: ['nuxt-windicss'],
+  modules: ['nuxt-windicss', 'nuxt-icon'],
 });
