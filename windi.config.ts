@@ -1,15 +1,12 @@
-import { defineConfig } from 'windicss/helpers';
+import { defineConfig } from "windicss/helpers";
 export default defineConfig({
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
     extend: {
       gridTemplateColumns: {
-        '24': 'repeat(24, minmax(0, 1fr))',
+        "24": "repeat(24, minmax(0, 1fr))",
       },
     },
   },
-  variants: {
-    backgroundColor: ['sepia'],
-  },var
-  plugins: [require('windicss/plugin/aspect-ratio')],
+  plugins: [require("windicss/plugin/aspect-ratio")],
 });

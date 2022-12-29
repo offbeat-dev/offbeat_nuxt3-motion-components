@@ -1,23 +1,24 @@
 <script setup>
-const color = useColorMode();
-const colors = ['light', 'dark'];
-function test(c) {
-  color.value = c;
-}
+const loading = ref(true);
+onMounted(() => {
+  console.log("mounted");
+  setTimeout(() => {
+    loading.value = false;
+  }, 1000);
+});
+useHead({
+  title: "My Nuxt Blah",
+  bodyAttrs: {
+    class: "dark:bg-black transition duration-1000",
+  },
+});
 </script>
 <template>
-  <div class="w-full relative bg-white dark:bg-black transition duration-500">
-    <li
-      v-for="color of colors"
-      :key="color"
-      @click="test(color)"
-      class="dark:text-white"
-    >
-      {{ color }}
-    </li>
-
-    <ActionToggles />
-    <AnimatedLink />
+  <div
+    class="w-full relative opacity-0 transition duration-1000"
+    :class="{ 'opacity-100': !loading }"
+  >
+    <Header />
     <ProjectGrid />
   </div>
 </template>
