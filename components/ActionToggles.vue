@@ -1,3 +1,3 @@
 <template>
-  <button><Icon name="ri:grid-line" /></button>
+  <button><Icon class="dark:text-white" name="ri:grid-line" /></button>
 </template>

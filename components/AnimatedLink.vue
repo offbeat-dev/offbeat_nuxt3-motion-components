@@ -61,6 +61,7 @@ function animateExit() {
       overflow-hidden
       focus:outline-solid-black
       w-auto
+      dark:text-white
     "
     @mouseover="
       {

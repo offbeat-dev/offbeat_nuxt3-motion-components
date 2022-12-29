@@ -8,5 +8,8 @@ export default defineConfig({
       },
     },
   },
+  variants: {
+    backgroundColor: ['sepia'],
+  },var
   plugins: [require('windicss/plugin/aspect-ratio')],
 });
