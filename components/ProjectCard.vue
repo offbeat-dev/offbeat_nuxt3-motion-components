@@ -43,6 +43,7 @@ const props = defineProps({
         hover:scale-110
         transform
         duration-500
+        aspect-video
       "
       :src="image.src"
     />
